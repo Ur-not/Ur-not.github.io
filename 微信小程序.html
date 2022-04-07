@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>微信小程序 | Urnot</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/img/favicon.ico">
+    <meta name="description" content="web前端技术博客,专注web前端学习与总结。">
+    <meta name="keywords" content="前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试">
+    <meta name="theme-color" content="#11a8cd">
+    
+    <link rel="preload" href="/assets/css/0.styles.52c5fec9.css" as="style"><link rel="preload" href="/assets/js/app.50cd9723.js" as="script"><link rel="preload" href="/assets/js/2.9b737b66.js" as="script"><link rel="preload" href="/assets/js/17.0753f765.js" as="script"><link rel="prefetch" href="/assets/js/10.b212cb5b.js"><link rel="prefetch" href="/assets/js/11.bd7a2f50.js"><link rel="prefetch" href="/assets/js/12.fdde1415.js"><link rel="prefetch" href="/assets/js/13.0f9721cf.js"><link rel="prefetch" href="/assets/js/14.65f2e0c2.js"><link rel="prefetch" href="/assets/js/15.68a0885a.js"><link rel="prefetch" href="/assets/js/16.b212a5f6.js"><link rel="prefetch" href="/assets/js/18.783041c3.js"><link rel="prefetch" href="/assets/js/19.1492e5bf.js"><link rel="prefetch" href="/assets/js/20.7831d245.js"><link rel="prefetch" href="/assets/js/3.11c9e138.js"><link rel="prefetch" href="/assets/js/4.654a78a2.js"><link rel="prefetch" href="/assets/js/5.849eb2c8.js"><link rel="prefetch" href="/assets/js/6.e0c04a27.js"><link rel="prefetch" href="/assets/js/7.89a2eb6d.js"><link rel="prefetch" href="/assets/js/8.27e4aac5.js"><link rel="prefetch" href="/assets/js/9.57a4b005.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.52c5fec9.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open no-sidebar have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.png" alt="Urnot" class="logo"> <span class="site-name can-hide">Urnot</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><!----> <span class="title" style="display:;">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>前端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue2.html" class="nav-link">vue2</a></li><li class="dropdown-subitem"><a href="/vue3.html" class="nav-link">vue3</a></li><li class="dropdown-subitem"><a href="/Ajax.html" class="nav-link">Ajax</a></li><li class="dropdown-subitem"><a href="/微信小程序.html" class="nav-link">微信小程序</a></li></ul></li><li class="dropdown-item"><h4>后端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/express.html" class="nav-link">express</a></li><li class="dropdown-subitem"><a href="/koa.html" class="nav-link">koa</a></li><li class="dropdown-subitem"><a href="/MySQL.html" class="nav-link">MySQL</a></li><li class="dropdown-subitem"><a href="/Sequelize.html" class="nav-link">Sequelize</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><!----> <span class="title" style="display:;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>前端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://cn.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vue
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://panjiachen.github.io/vue-element-admin-site/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vue-admin
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://es6.ruanyifeng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ES6
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://developer.mozilla.org/zh-CN/docs/Web" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  web技术
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>后端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.expressjs.com.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Express
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://koa.bootcss.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  koa
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>设计</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.zcool.com.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  站酷
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  dribbble
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.iconfont.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  icon
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://uirush.com/design#%E7%83%AD%E9%97%A8" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  百宝箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="/about.html" class="nav-link">关于</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="/img/avatar.png"> <div class="blogger-info"><h3>Urnot</h3> <span>个人博客</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><!----> <span class="title" style="display:;">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>前端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue2.html" class="nav-link">vue2</a></li><li class="dropdown-subitem"><a href="/vue3.html" class="nav-link">vue3</a></li><li class="dropdown-subitem"><a href="/Ajax.html" class="nav-link">Ajax</a></li><li class="dropdown-subitem"><a href="/微信小程序.html" class="nav-link">微信小程序</a></li></ul></li><li class="dropdown-item"><h4>后端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/express.html" class="nav-link">express</a></li><li class="dropdown-subitem"><a href="/koa.html" class="nav-link">koa</a></li><li class="dropdown-subitem"><a href="/MySQL.html" class="nav-link">MySQL</a></li><li class="dropdown-subitem"><a href="/Sequelize.html" class="nav-link">Sequelize</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><!----> <span class="title" style="display:;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>前端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://cn.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vue
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://panjiachen.github.io/vue-element-admin-site/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vue-admin
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://es6.ruanyifeng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ES6
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://developer.mozilla.org/zh-CN/docs/Web" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  web技术
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>后端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.expressjs.com.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Express
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://koa.bootcss.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  koa
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>设计</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.zcool.com.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  站酷
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  dribbble
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.iconfont.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  icon
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://uirush.com/design#%E7%83%AD%E9%97%A8" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  百宝箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="/about.html" class="nav-link">关于</a></div> <!----></nav>  <!----> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-0c557b5e><div class="articleInfo" data-v-0c557b5e><!----> <div class="info" data-v-0c557b5e><div title="作者" class="author iconfont icon-touxiang" data-v-0c557b5e><a href="javascript:;" data-v-0c557b5e>Urnot</a></div> <!----> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABH1JREFUSA3tVl1oHFUUPmdmd2ltklqbpJDiNnXFmgbFktho7YMPNiJSSZM0+CAYSkUELVhM6YuwIPpgoOKDqOBDC0XE2CQoNtQXBUFTTcCi+Wlh1V2TQExsUzcltd3M9Tt3ZjZzZ2fT+OJTL8yeM+eee757fmeJbq//KQL8X3DUSFOcfr7cRsRtxNQMWueeVzOkaITIGqQHNg5y8+jNW9ldM7A6nTpAjuolUikAwq7CE3WcM2RRDz+XGVgN3FptU/aUSlvq9Pa3iZ1+sgAqJyyAFqkipd9dqiwHF3P65YycLWc/6sqGrvoEoIp6DOFaX5h6+dnfjkWprwqsPk0dUGq5vySwDImC10KxFHgGL1SWoc92O3eVht09qdXNH11I2SsTsJYqMWzihqGMi+A+Garf3BAuuLI5oGlULyNfyB/HYNujwktOfRrMr5t77NmevqaUopx0grnKAyvVpmwUDB4x6FPXuGvYLTDwWsejwgtgkYKPqRJg8SV6xaiZ3ZTppGneS4yfH5/66fZSDHv+QZci/+h5c5UHtpy67JUqGppM0sh0Nc1dW6/N1W5Yoqat8/TU/VnadmdeW2PLLSyh0cvxBs3KbqTmwYPpxN4do/mzE8nEpvX/UMu2Wbp74zUAK5q6WkHns7V0eWkdPbPzd3rxkTGybadYySumVzhcaJFbs5UrEkQ/+CK8gF5dnh/6ciIZ73gwQ927L1IitoxKLXYP3SjYdOrHHfTZhRRlFyrorafPk20B3HPD1y2G3qKZME5Jcf3t/HUC13/8tSd++vqFveMUTwAUxSUFI1QekR1+bIze3D9MF2aq6cPvG72CgnldWCFqyRw3lwH8ZMerjTD9ElRO7Gv44wNpC90aASqGfVlz/Rx17srQ57/UU26hkhQqUB7dBR71WmzQhHUnblGmVOEw0jhbV1n9OlXUDCIRGaNV5Jp43N516fN7JmnTHdfp7Hgy0luO4aMhtkLL8Bi3bUWYvzh5Mn1dTxrL6QmGuRhGL/TiTTxRoEdTszSaq9GR0NGA3KdkOz3hqSV3MIDhQ5IVX/Ivx3umBti2es2h4eZby7x8br1rkf7Mo90AqC8aQ3sJeNzqFRu+vSANAQe3PL7l0HGOAdwDCeZYvNKeoZp1Qfs6Aipndh86HmFRi0LAnEO47wsqM6cdfjh3jBPUzhZy7nvlUfFsamED1VQt6aISHVymXZ/B2aCtIG8AI8xfobj2d3en1wWVhOeHELKmLQ1s211s88comkv4UCwWyF787mJdYXtNfhKAXVqnKTq8QZvGAGGOfaTo5pGZ/PwbUCr5+DPr/1J92JNHr9aOl/F3iI5+O1nfybsGxoimvZ3ViWSluDITw3P37mypheDIPY0tw7+O/5ApbkYw+zpfaUVu32Pi98+defdUhEpZkRFq0aqyNh9FuL9hpYbEm6iwi0z2REd09ZmyENEbuhjDWzKvZXTqKYaBIr3tt5kuPtQBZFvEUwHt60vfCNu41XsksH9Ij1BMMz1Y0OOunHNShFIP5868g5zeXmuLwL9T4b6Q2+KejgAAAABJRU5ErkJggg==">微信小程序<!----></h1> <!----> <div class="theme-vdoing-content content__default"><h1 id="微信小程序"><a href="#微信小程序" class="header-anchor">#</a> 微信小程序</h1> <h2 id="_1-起步"><a href="#_1-起步" class="header-anchor">#</a> 1. 起步</h2> <h3 id="_1-1-小程序简介"><a href="#_1-1-小程序简介" class="header-anchor">#</a> 1.1 小程序简介</h3> <h4 id="_1-1-1-小程序与普通网页开发的区别"><a href="#_1-1-1-小程序与普通网页开发的区别" class="header-anchor">#</a> 1.1.1 小程序与普通网页开发的区别</h4> <p>① 运行环境不同
+网页运行在浏览器环境中，小程序运行在微信环境中</p> <p>② API 不同
+由于运行环境的不同，所以小程序中，无法调用 DOM 和 BOM 的 API。但是，小程序中可以调用微信环境提供的各种 API，例如： 地理定位、扫码、支付</p> <p>③ 开发模式不同
+网页的开发模式：浏览器 + 代码编辑器。小程序有自己的一套标准开发模式：
+申请小程序开发账号、安装小程序开发者工具、创建和配置小程序项目</p> <h3 id="_1-2-注册小程序开发帐号"><a href="#_1-2-注册小程序开发帐号" class="header-anchor">#</a> 1.2 注册小程序开发帐号</h3> <h3 id="_1-3-小程序代码的构成"><a href="#_1-3-小程序代码的构成" class="header-anchor">#</a> 1.3 小程序代码的构成</h3> <h4 id="_1-3-1-了解项目的基本组成结构"><a href="#_1-3-1-了解项目的基本组成结构" class="header-anchor">#</a> 1.3.1 了解项目的基本组成结构</h4> <p>① pages 用来存放所有小程序的页面
+② utils 用来存放工具性质的模块（例如：格式化时间的自定义模块）
+③ app.js 小程序项目的入口文件
+④ app.json 小程序项目的全局配置文件
+⑤ app.wxss 小程序项目的全局样式文件
+⑥ project.config.json 项目的配置文件
+⑦ sitemap.json 用来配置小程序及其页面是否允许被微信索引</p> <h4 id="_1-3-2-小程序页面的组成部分"><a href="#_1-3-2-小程序页面的组成部分" class="header-anchor">#</a> 1.3.2 小程序页面的组成部分</h4> <p>小程序官方建议把所有小程序的页面，都存放在 pages 目录中，以单独的文件夹存在，如图所示：</p> <p>其中，每个页面由 4 个基本文件组成，它们分别是：
+① .js 文件（页面的脚本文件，存放页面的数据、事件处理函数等）
+② .json 文件（当前页面的配置文件，配置窗口的外观、表现等）
+③ .wxml 文件（页面的模板结构文件）
+④ .wxss 文件（当前页面的样式表文件）</p> <h4 id="_1-3-3-json-配置文件的作用"><a href="#_1-3-3-json-配置文件的作用" class="header-anchor">#</a> 1.3.3 JSON 配置文件的作用</h4> <p>JSON 是一种数据格式，在实际开发中，JSON 总是以配置文件的形式出现。小程序项目中也不例外：通过不同的 .json 配置文件，可以对小程序项目进行不同级别的配置。
+小程序项目中有 4 种 json 配置文件，分别是：
+① 项目根目录中的 app.json 配置文件
+② 项目根目录中的 project.config.json 配置文件
+③ 项目根目录中的 sitemap.json 配置文件
+④ 每个页面文件夹中的 .json 配置文件</p> <h4 id="_1-3-4-app-json-文件"><a href="#_1-3-4-app-json-文件" class="header-anchor">#</a> 1.3.4  app.json 文件</h4> <p>app.json 是当前小程序的全局配置，包括了小程序的所有页面路径、窗口外观、界面表现、底部 tab 等。Demo 项目里边的 app.json 配置内容如下：</p> <p>简单了解下这 4 个配置项的作用：
+① pages：用来记录当前小程序所有页面的路径
+② window：全局定义小程序所有页面的背景色、文字颜色等
+③ style：全局定义小程序组件所使用的样式版本
+④ sitemapLocation：用来指明 sitemap.json 的位置</p> <h4 id="_1-3-4-project-config-json-文件"><a href="#_1-3-4-project-config-json-文件" class="header-anchor">#</a> 1.3.4  project.config.json 文件</h4> <p>project.config.json 是项目配置文件，用来记录我们对小程序开发工具所做的个性化配置，例如：
+setting 中保存了编译相关的配置
+projectname 中保存的是项目名称
+appid 中保存的是小程序的账号 ID</p> <h4 id="_1-3-5-sitemap-json-文件"><a href="#_1-3-5-sitemap-json-文件" class="header-anchor">#</a> 1.3.5  sitemap.json 文件</h4> <p>微信现已开放小程序内搜索，效果类似于 PC 网页的 SEO。sitemap.json 文件用来配置小程序页面是否允许微信索引。
+当开发者允许微信索引时，微信会通过爬虫的形式，为小程序的页面内容建立索引。当用户的搜索关键字和页面的索引匹配成功的时候，小程序的页面将可能展示在搜索结果中。</p> <p>注意：sitemap 的索引提示是默认开启的，如需要关闭 sitemap 的索引提示，可在小程序项目配置文件 project.config.json 的 setting 中配置字段 checkSiteMap 为 false</p> <h3 id="_1-4-wxml-模板"><a href="#_1-4-wxml-模板" class="header-anchor">#</a> 1.4 WXML 模板</h3> <p>WXML（WeiXin Markup Language）是小程序框架设计的一套标签语言，用来构建小程序页面的结构，其作用类似于网页开发中的 HTML</p> <h3 id="_1-5-wxss-样式"><a href="#_1-5-wxss-样式" class="header-anchor">#</a> 1.5 WXSS 样式</h3> <p>WXSS (WeiXin Style Sheets)是一套样式语言，用于描述 WXML 的组件样式，类似于网页开发中的 CSS</p> <p>① 新增了 rpx 尺寸单位
+CSS 中需要手动进行像素单位换算，例如 rem
+WXSS 在底层支持新的尺寸单位 rpx，在不同大小的屏幕上小程序会自动进行换算
+② 提供了全局的样式和局部样式
+项目根目录中的 app.wxss 会作用于所有小程序页面
+局部页面的 .wxss 样式仅对当前页面生效
+③ WXSS 仅支持部分 CSS 选择器
+.class 和 #id
+element
+并集选择器、后代选择器
+::after 和 ::before 等伪类选择器</p> <h3 id="_1-6-小程序中的-js-文件"><a href="#_1-6-小程序中的-js-文件" class="header-anchor">#</a> 1.6  小程序中的 .js 文件</h3> <p>一个项目仅仅提供界面展示是不够的，在小程序中，我们通过 .js 文件来处理用户的操作。例如：响应用户的点击、获取用户的位置等等</p> <p>小程序中的 JS 文件分为三大类，分别是：
+① app.js
+是整个小程序项目的入口文件，通过调用 App() 函数来启动整个小程序
+② 页面的 .js 文件
+是页面的入口文件，通过调用 Page() 函数来创建并运行页面
+③ 普通的 .js 文件
+是普通的功能模块文件，用来封装公共的函数或属性供页面使用</p> <h3 id="_1-7-小程序中的组件"><a href="#_1-7-小程序中的组件" class="header-anchor">#</a> 1.7 小程序中的组件</h3> <h4 id="_1-7-1-组件的分类"><a href="#_1-7-1-组件的分类" class="header-anchor">#</a> 1.7.1 组件的分类</h4> <p>小程序中的组件也是由宿主环境提供的，开发者可以基于组件快速搭建出漂亮的页面结构。官方把小程序的组
+件分为了 9 大类，分别是：
+① 视图容器
+② 基础内容
+③ 表单组件
+④ 导航组件
+⑤ 媒体组件
+⑥ map 地图组件
+⑦ canvas 画布组件
+⑧ 开放能力
+⑨ 无障碍访问</p> <h4 id="_1-7-2-常用的视图容器类组件"><a href="#_1-7-2-常用的视图容器类组件" class="header-anchor">#</a> 1.7.2 常用的视图容器类组件</h4> <p>① view
+普通视图区域
+类似于 HTML 中的 div，是一个块级元素
+常用来实现页面的布局效果
+② scroll-view
+可滚动的视图区域
+常用来实现滚动列表效果
+③ swiper 和 swiper-item
+轮播图容器组件 和 轮播图 item 组件</p> <p>​	swiper 组件的常用属性</p> <p><img src="https://gitee.com/ur-not/picture_wx/raw/master/swiper%20%E7%BB%84%E4%BB%B6%E7%9A%84%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7.png" alt=""></p> <h4 id="_1-7-3-常用的基础内容组件"><a href="#_1-7-3-常用的基础内容组件" class="header-anchor">#</a> 1.7.3 常用的基础内容组件</h4> <p>① text
+文本组件
+类似于 HTML 中的 span 标签，是一个行内元素</p> <p>​	通过 text 组件的 selectable 属性，实现长按选中文本内容的效果：</p> <p>② rich-text
+富文本组件
+支持把 HTML 字符串渲染为 WXML 结构</p> <p>​	通过 rich-text 组件的 nodes 属性节点，把 HTML 字符串渲染为对应的 UI 结构：</p> <h4 id="_1-7-4-其他常用组件"><a href="#_1-7-4-其他常用组件" class="header-anchor">#</a> 1.7.4 其他常用组件</h4> <p>① button
+按钮组件
+功能比 HTML 中的 button 按钮丰富
+通过 open-type 属性可以调用微信提供的各种功能（客服、转发、获取用户授权、获取用户信息等）
+② image
+图片组件
+image 组件默认宽度约 300px、高度约 240px</p> <p>​	image 组件的 mode 属性用来指定图片的裁剪和缩放模式，常用的 mode 属性值如下：</p> <p><img src="https://gitee.com/ur-not/picture_wx/raw/master/image%E7%BB%84%E4%BB%B6%E7%9A%84mode%E5%B1%9E%E6%80%A7.png" alt=""></p> <p>③ navigator（后面课程会专门讲解）
+页面导航组件
+类似于 HTML 中的 a 链接</p> <h3 id="_1-8-小程序的api"><a href="#_1-8-小程序的api" class="header-anchor">#</a> 1.8 小程序的API</h3> <p>小程序官方把 API 分为了如下 3 大类：
+① 事件监听 API
+特点：以 on 开头，用来监听某些事件的触发
+举例：wx.onWindowResize(function callback) 监听窗口尺寸变化的事件
+② 同步 API
+特点1：以 Sync 结尾的 API 都是同步 API
+特点2：同步 API 的执行结果，可以通过函数返回值直接获取，如果执行出错会抛出异常
+举例：wx.setStorageSync('key', 'value') 向本地存储中写入内容
+③ 异步 API
+特点：类似于 jQuery 中的 $.ajax(options) 函数，需要通过 success、fail、complete 接收调用的结果
+举例：wx.request() 发起网络数据请求，通过 success 回调函数接收数据</p> <h2 id="_2-模板与配置"><a href="#_2-模板与配置" class="header-anchor">#</a> 2. 模板与配置</h2> <h3 id="_2-1-wxml-模板语法"><a href="#_2-1-wxml-模板语法" class="header-anchor">#</a> 2.1  WXML 模板语法</h3> <h4 id="_2-1-1-数据绑定的基本原则"><a href="#_2-1-1-数据绑定的基本原则" class="header-anchor">#</a> 2.1.1 数据绑定的基本原则</h4> <p>① 在 data 中定义数据</p> <p>在页面对应的 .js 文件中，把数据定义到 data 对象中即可。</p> <p>② 在 WXML 中使用数据</p> <p>把data中的数据绑定到页面中渲染，使用 Mustache 语法（双大括号）将变量包起来即可。</p> <p>Mustache 语法的主要应用场景如下：
+绑定内容
+绑定属性
+运算（三元运算、算术运算等）</p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code>Page({
+    data:{
+        info:'message',
+        msgList:[{msg:'hello'},{msg:'world'}]
+    }
+})
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span><span class="token punctuation">&gt;</span></span>{{ info }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h4 id="_2-1-2-事件绑定"><a href="#_2-1-2-事件绑定" class="header-anchor">#</a> 2.1.2 事件绑定</h4> <p>事件是渲染层到逻辑层的通讯方式。通过事件可以将用户在渲染层产生的行为，反馈到逻辑层进行业务的处理。</p> <p>常用事件：tap、input、change</p> <p>① 事件对象的属性列表</p> <p>当事件回调触发的时候，会收到一个事件对象 event，它的详细属性如下表所示：</p> <p><img src="https://gitee.com/ur-not/picture_wx/raw/master/event%E5%B1%9E%E6%80%A7.png" alt=""></p> <p>② target 和 currentTarget 的区别
+target 是触发该事件的源头组件，而 currentTarget 则是当前事件所绑定的组件。举例如下：
+点击内部的按钮时，点击事件以冒泡的方式向外扩散，也会触发外层 view 的 tap 事件处理函数。
+此时，对于外层的 view 来说：
+e.target 指向的是触发事件的源头组件，因此，e.target 是内部的按钮组件
+e.currentTarget 指向的是当前正在触发事件的那个组件，因此，e.currentTarget 是当前的 view 组件</p> <p>③ bindtap 的语法格式</p> <p>在小程序中，不存在 HTML 中的 onclick 鼠标点击事件，而是通过 tap 事件来响应用户的触摸行为。 通过 bindtap，可以为组件绑定 tap 触摸事件，在页面的 .js 文件中定义对应的事件处理函数，事件参数通过形参 event（一般简写成 e） 来接收</p> <p>④ 在事件处理函数中为 data 中的数据赋值</p> <p>⑤ 事件传参</p> <p>小程序中的事件传参比较特殊，不能在绑定事件的同时为事件处理函数传递参数。</p> <p>​		如：bindtap=＂btnHandler(123)＂</p> <p>可以为组件提供 data-* 自定义属性传参，其中 * 代表的是参数的名字</p> <p>​		最终： info 会被解析为参数的名字，数值 2 会被解析为参数的值</p> <p>​		bindtap=＂btnHandler(123)＂　data-info=&quot;2&quot;</p> <p>在事件处理函数中，通过 event.target.dataset.参数名 即可获取到具体参数的值</p> <p>​		如： event.target.dataset.info</p> <h4 id="_2-1-3-条件渲染"><a href="#_2-1-3-条件渲染" class="header-anchor">#</a> 2.1.3 条件渲染</h4> <p>wx:if 与 hidden 的对比
+① 运行方式不同
+wx:if 以动态创建和移除元素的方式，控制元素的展示与隐藏
+hidden 以切换样式的方式（display: none/block;），控制元素的显示与隐藏
+② 使用建议
+频繁切换时，建议使用 hidden
+控制条件复杂时，建议使用 wx:if 搭配 wx:elif、wx:else 进行展示与隐藏的切换</p> <h4 id="_2-1-4-列表渲染"><a href="#_2-1-4-列表渲染" class="header-anchor">#</a> 2.1.4 列表渲染</h4> <p>① wx:for
+通过 wx:for 可以根据指定的数组，循环渲染重复的组件结构。
+默认情况下，当前循环项的索引用 index 表示；当前循环项用 item 表示。</p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name"><span class="token namespace">wx:</span>for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{{arr1}}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+ {{index}}--{{item}}
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>②  手动指定索引和当前项的变量名*
+使用 wx:for-index 可以指定当前循环项的索引的变量名
+使用 wx:for-item 可以指定当前项的变量名</p> <p>③ 3. wx:key 的使用
+类似于 Vue 列表渲染中的 :key，小程序在实现列表渲染时，也建议为渲染出来的列表项指定唯一的 key 值，从而提高渲染的效率</p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name"><span class="token namespace">wx:</span>for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{{arr1}}<span class="token punctuation">&quot;</span></span> <span class="token attr-name"><span class="token namespace">wx:</span>key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>id<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+ {{index}}--{{item.name}}
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="_2-2-wxss-模板样式"><a href="#_2-2-wxss-模板样式" class="header-anchor">#</a> 2.2 WXSS 模板样式</h3> <p>WXSS (WeiXin Style Sheets)是一套样式语言，用于美化 WXML 的组件样式，类似于网页开发中的 CSS。</p> <p>WXSS 具有 CSS 大部分特性，同时，WXSS 还对 CSS 进行了扩充以及修改，以适应微信小程序的开发。
+与 CSS 相比，WXSS 扩展的特性有：rpx 尺寸单位、@import 样式导入</p> <h4 id="_2-2-1-rpx-的实现原理"><a href="#_2-2-1-rpx-的实现原理" class="header-anchor">#</a> 2.2.1  rpx 的实现原理</h4> <p>rpx 的实现原理非常简单：鉴于不同设备屏幕的大小不同，为了实现屏幕的自动适配，rpx 把所有设备的屏幕，
+在宽度上等分为 750 份（即：当前屏幕的总宽度为 750rpx）。
+在较小的设备上，1rpx 所代表的宽度较小
+在较大的设备上，1rpx 所代表的宽度较大
+小程序在不同设备上运行的时候，会自动把 rpx 的样式单位换算成对应的像素单位来渲染，从而实现屏幕适配。</p> <h4 id="_2-2-2-样式导入"><a href="#_2-2-2-样式导入" class="header-anchor">#</a> 2.2.2  样式导入</h4> <p>使用 WXSS 提供的 @import 语法，可以导入外联的样式表。</p> <p>@import 后跟需要导入的外联样式表的相对路径，@import&quot;common/common.wxss&quot;;</p> <h4 id="_2-2-3-全局样式和局部样式"><a href="#_2-2-3-全局样式和局部样式" class="header-anchor">#</a> 2.2.3 全局样式和局部样式</h4> <p>① 全局样式</p> <p>定义在 app.wxss 中的样式为全局样式，作用于每一个页面。</p> <p>② 局部样式</p> <p>在页面的 .wxss 文件中定义的样式为局部样式，只作用于当前页面。
+注意：
+当局部样式和全局样式冲突时，根据就近原则，局部样式会覆盖全局样式
+当局部样式的权重大于或等于全局样式的权重时，才会覆盖全局的样式</p> <h3 id="_2-3-全局配置"><a href="#_2-3-全局配置" class="header-anchor">#</a> 2.3 全局配置</h3> <h4 id="_2-3-1-全局配置文件及常用的配置项"><a href="#_2-3-1-全局配置文件及常用的配置项" class="header-anchor">#</a> 2.3.1 全局配置文件及常用的配置项</h4> <p>小程序根目录下的 app.json 文件是小程序的全局配置文件。常用的配置项如下：
+<strong>① pages</strong>
+记录当前小程序所有页面的存放路径
+<strong>② window</strong>
+全局设置小程序窗口的外观</p> <p>window常用配置项</p> <p><img src="https://gitee.com/ur-not/picture_wx/raw/master/window%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE%E9%A1%B9.png" alt=""></p> <p>如：设置**导航栏标题，**设置步骤：app.json -&gt; window -&gt; navigationBarTitleText</p> <p>​		设置<strong>下拉刷新</strong>，设置步骤：app.json -&gt; window -&gt; 把 enablePullDownRefresh 的值设置为 true。注意：在 app.json 中启用下拉刷新功能，会作用于每个小程序页面！</p> <p>​		设置<strong>下拉刷新时窗口的背景色</strong>，app.json -&gt; window -&gt; 为 backgroundColor 指定16进制的颜色值 #efefef。</p> <p>​		设置下<strong>拉刷新时 loading 的样式</strong>，app.json -&gt; window -&gt; 为 backgroundTextStyle 指定 dark 值。</p> <p>​		设置<strong>上拉触底的距离</strong>，app.json -&gt; window -&gt; 为 onReachBottomDistance ，默认50px</p> <p><strong>③ tabBar</strong>
+设置小程序底部的 tabBar 效果</p> <p>tabBar中只能配置最少2个、最多 5个tab页签，当渲染顶部 tabBar 时，不显示 icon，只显示文本</p> <p>（1）tabBar组成部分：</p> <p>① backgroundColor：tabBar 的背景色
+② selectedIconPath：选中时的图片路径
+③ borderStyle：tabBar 上边框的颜色
+④ iconPath：未选中时的图片路径
+⑤ selectedColor：tab 上的文字选中时的颜色
+⑥ color：tab 上文字的默认（未选中）颜色</p> <p>（2）tabBar 节点的配置项</p> <p><img src="https://gitee.com/ur-not/picture_wx/raw/master/tabBar%E8%8A%82%E7%82%B9%E9%85%8D%E7%BD%AE%E9%A1%B9.png" alt=""></p> <p>（3）tabBar配置项</p> <p><img src="https://gitee.com/ur-not/picture_wx/raw/master/tabBar%E9%85%8D%E7%BD%AE%E9%A1%B9.png" alt=""></p> <p><strong>④ style</strong>
+是否启用新版的组件样式</p> <h3 id="_2-4-页面配置"><a href="#_2-4-页面配置" class="header-anchor">#</a> 2.4 页面配置</h3> <p>页面配置与全局配置</p> <p>小程序中，app.json 中的 window 节点，可以全局配置小程序中每个页面的窗口表现。
+如果某些小程序页面想要拥有特殊的窗口表现，此时，“页面级别的 .json 配置文件”就可以实现这种需求。
+注意：当页面配置与全局配置冲突时，根据就近原则，最终的效果以页面配置为准。</p> <p>页面配置常用配置项</p> <p><img src="https://gitee.com/ur-not/picture_wx/raw/master/%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE%E9%A1%B9.png" alt=""></p> <h3 id="_2-5-网络数据请求"><a href="#_2-5-网络数据请求" class="header-anchor">#</a> 2.5 网络数据请求</h3> <h4 id="_2-5-1-小程序中网络数据请求的限制"><a href="#_2-5-1-小程序中网络数据请求的限制" class="header-anchor">#</a> 2.5.1 小程序中网络数据请求的限制</h4> <p>出于安全性方面的考虑，小程序官方对数据接口的请求做出了如下
+两个限制：
+① 只能请求 HTTPS 类型的接口
+② 必须将接口的域名添加到信任列表中</p> <h4 id="_2-5-2-配置-request-合法域名"><a href="#_2-5-2-配置-request-合法域名" class="header-anchor">#</a> 2.5.2 配置 request 合法域名</h4> <p>需求描述：假设在自己的微信小程序中，希望请求 https://www.escook.cn/ 域名下的接口
+配置步骤：登录微信小程序管理后台 -&gt; 开发 -&gt; 开发设置 -&gt; 服务器域名 -&gt; 修改 request 合法域名
+注意事项：
+① 域名只支持 https 协议
+② 域名不能使用 IP 地址或 localhost
+③ 域名必须经过 ICP 备案
+④ 服务器域名一个月内最多可申请 5 次修改</p> <h4 id="_2-5-3-发起get-请求"><a href="#_2-5-3-发起get-请求" class="header-anchor">#</a> 2.5.3 发起GET 请求</h4> <p>调用微信小程序提供的 wx.request() 方法，可以发起 GET 、POST数据请求</p> <h4 id="_2-5-4-在页面刚加载时请求数据"><a href="#_2-5-4-在页面刚加载时请求数据" class="header-anchor">#</a> 2.5.4 在页面刚加载时请求数据</h4> <p>在很多情况下，我们需要在页面刚加载的时候，自动请求一些初始化的数据。此时需要在页面的 onLoad 事件中调用获取数据的函数</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>onload：<span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getSwiper</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getGridList</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="_2-5-5-跳过request合肥域名校验"><a href="#_2-5-5-跳过request合肥域名校验" class="header-anchor">#</a> 2.5.5 跳过request合肥域名校验</h4> <p>如果后端程序员仅仅提供了 http 协议的接口、暂时没有提供 https 协议的接口。
+此时为了不耽误开发的进度，我们可以在微信开发者工具中，临时开启「开发环境不校验请求域名、TLS 版本及 HTTPS 证书」选项，跳过 request 合法域名的校验。（在本地设置中）
+注意：跳过 request 合法域名校验的选项，仅限在开发与调试阶段使用！</p> <h4 id="_2-5-6-关于跨域和ajax"><a href="#_2-5-6-关于跨域和ajax" class="header-anchor">#</a> 2.5.6 关于跨域和Ajax</h4> <p>跨域问题只存在于基于浏览器的 Web 开发中。由于小程序的宿主环境不是浏览器，而是微信客户端，所以小程序中不存在跨域的问题。
+Ajax 技术的核心是依赖于浏览器中的 XMLHttpRequest 这个对象，由于小程序的宿主环境是微信客户端，所以小程序中不能叫做“发起 Ajax 请求”，而是叫做“发起网络数据请求”。</p> <h2 id="_3-视图与逻辑"><a href="#_3-视图与逻辑" class="header-anchor">#</a> 3. 视图与逻辑</h2> <h3 id="_3-1-页面导航"><a href="#_3-1-页面导航" class="header-anchor">#</a> 3.1 页面导航</h3> <p>页面导航指的是页面之间的相互跳转。</p> <p>例如，浏览器中实现页面导航的方式有如下两种：
+①  链接
+② location.href</p> <p>小程序中实现页面导航的两种方式</p> <p>① 声明式导航
+在页面上声明一个  导航组件
+通过点击  组件实现页面跳转
+② 编程式导航
+调用小程序的导航 API，实现页面的跳转</p> <h4 id="_3-1-1-声明式导航"><a href="#_3-1-1-声明式导航" class="header-anchor">#</a> 3.1.1 声明式导航</h4> <p><strong>（1） 导航到tabBar页面</strong></p> <p>tabBar 页面指的是被配置为 tabBar 的页面。
+在使用  组件跳转到指定的 tabBar 页面时，需要指定 url 属性和 open-type 属性，其中：
+url 表示要跳转的页面的地址，必须以 / 开头
+open-type 表示跳转的方式，必须为 switchTab</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>navigator</span> <span class="token attr-name">url</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>/pages/message/message<span class="token punctuation">&quot;</span></span> <span class="token attr-name">open-type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>switchTab<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>go<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>navigator</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>（2） 导航到非tabBar页面</strong></p> <p>非 tabBar 页面指的是没有被配置为 tabBar 的页面。
+在使用  组件跳转到普通的非 tabBar 页面时，则需要指定 url 属性和 open-type 属性，其中：
+url 表示要跳转的页面的地址，必须以 / 开头
+open-type 表示跳转的方式，必须为 navigate</p> <p>注意：为了简便，在导航到非 tabBar 页面时，open-type=&quot;navigate&quot; 属性可以省略。</p> <p><strong>（3）后退导航</strong></p> <p>如果要后退到上一页面或多级页面，则需要指定 open-type 属性和 delta 属性，其中：
+open-type 的值必须是 navigateBack，表示要进行后退导航
+delta 的值必须是数字，表示要后退的层级</p> <p>注意：为了简便，如果只是后退到上一页面，则可以省略 delta 属性，因为其默认值就是 1。</p> <h4 id="_3-1-2-编程式导航"><a href="#_3-1-2-编程式导航" class="header-anchor">#</a> 3.1.2 编程式导航</h4> <p><strong>（1） 导航到tabBar页面</strong></p> <p>调用 wx.switchTab(Object object) 方法，可以跳转到 tabBar 页面。其中 Object 参数对象的属性列表如下：</p> <p><img src="https://gitee.com/ur-not/picture_wx/raw/master/%E8%B7%B3%E8%BD%ACtabBar.png" alt=""></p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">bindtap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>go<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>goto<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+    go(){
+        wx.switchTab({
+          url: '/pages/message/message',
+        })
+    },
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong>（2） 导航到非tabBar页面</strong></p> <p>调用 wx.navigateTo(Object object) 方法，可以跳转到非 tabBar 的页面。其中 Object 参数对象的属性列表如下：</p> <p><img src="https://gitee.com/ur-not/picture_wx/raw/master/%E8%B7%B3%E8%BD%AC%E9%9D%9EtabBar.png" alt=""></p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">bindtap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>go<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>goto<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+    go(){
+        wx.navigateTo({
+          url: '/pages/info/info',
+        })
+    },
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong>（3）后退导航</strong></p> <p>调用 wx.navigateBack(Object object) 方法，可以返回上一页面或多级页面。其中 Object 参数对象可选的属性列表如下：</p> <p><img src="https://gitee.com/ur-not/picture_wx/raw/master/%E5%90%8E%E9%80%80%E5%AF%BC%E8%88%AA.png" alt=""></p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">bindtap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>go<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>goto<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+    go(){
+        wx.navigateBack()
+    },
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="_3-1-3-导航传参"><a href="#_3-1-3-导航传参" class="header-anchor">#</a> 3.1.3 导航传参</h4> <p><strong>（1）声明式导航传参</strong></p> <p>navigator 组件的 url 属性用来指定将要跳转到的页面的路径。同时，路径的后面还可以携带参数：
+参数与路径之间使用 ? 分隔
+参数键与参数值用 = 相连
+不同参数用 &amp; 分隔</p> <p><strong>（2）编程式导航传参</strong></p> <p>调用 wx.navigateTo(Object object) 方法跳转页面时，也可以携带参数，代码示例如下</p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">bindtap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>go<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>goto<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+    go(){
+        wx.navigateTo({
+          url: '/pages/info/info?name=zs&amp;age=20',
+        })
+    },
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong>（3）在onLoad中接收导航参数</strong></p> <p>通过声明式导航传参或编程式导航传参所携带的参数，可以直接在 onLoad 事件中直接获取到，示例代码如下：(在跳转去的页面的js文件中)</p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code>onLoad: function (options) {
+	console.log(options)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>通过在onLoad函数中，this.setData({ query: options }) 可以将参数存到data中</p> <h3 id="_3-2-页面事件"><a href="#_3-2-页面事件" class="header-anchor">#</a> 3.2 页面事件</h3> <h4 id="_3-2-1-下拉刷新"><a href="#_3-2-1-下拉刷新" class="header-anchor">#</a> 3.2.1 下拉刷新</h4> <p><strong>（1）启用下拉刷新有两种方式：</strong>
+① 全局开启下拉刷新
+在 app.json 的 window 节点中，将 enablePullDownRefresh 设置为 true
+② 局部开启下拉刷新
+在页面的 .json 配置文件中，将 enablePullDownRefresh 设置为 true
+在实际开发中，推荐使用第 2 种方式，为需要的页面单独开启下拉刷新的效果。</p> <p><strong>（2）配置下拉刷新窗口的样式</strong>
+在全局或页面的 .json 配置文件中，通过 backgroundColor 和 backgroundTextStyle 来配置下拉刷新窗口的样式，其中：
+backgroundColor 用来配置下拉刷新窗口的背景颜色，仅支持16 进制的颜色值
+backgroundTextStyle 用来配置下拉刷新 loading 的样式，仅支持 dark 和 light</p> <p><strong>（3） 监听页面的下拉刷新事件</strong>
+在页面的 .js 文件中，通过 onPullDownRefresh() 函数即可监听当前页面的下拉刷新事件。
+例如，在页面的 wxml 中有如下的 UI 结构，点击按钮可以让 count 值自增 +1：</p> <p>在触发页面的下拉刷新事件的时候，如果要把 count 的值重置为 0，示例代码如下：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token operator">&lt;</span>view <span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span>count<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>view<span class="token operator">&gt;</span><span class="token operator">&lt;</span>button bindtap<span class="token operator">=</span><span class="token string">&quot;add&quot;</span><span class="token operator">&gt;</span><span class="token operator">+</span><span class="token number">1</span><span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+
+<span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">count</span><span class="token operator">:</span><span class="token number">0</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">count</span><span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>count<span class="token operator">+</span><span class="token number">1</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+<span class="token function-variable function">onPullDownRefresh</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  	  <span class="token literal-property property">count</span><span class="token operator">:</span><span class="token number">0</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p><strong>（4）停止下拉刷新的效果</strong>
+当处理完下拉刷新后，下拉刷新的 loading 效果会一直显示，不会主动消失，所以需要手动隐藏下拉刷新的loading 效果。此时，调用 wx.stopPullDownRefresh() 可以停止当前页面的下拉刷新。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token function-variable function">onPullDownRefresh</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+   	 <span class="token literal-property property">count</span><span class="token operator">:</span><span class="token number">0</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+wx<span class="token punctuation">.</span><span class="token function">stopPullDownRefresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="_3-2-2-上拉触底事件"><a href="#_3-2-2-上拉触底事件" class="header-anchor">#</a> 3.2.2 上拉触底事件</h4> <p>监听页面的上拉触底事件
+在页面的 .js 文件中，通过 onReachBottom() 函数即可监听当前页面的上拉触底事件。</p> <p>上拉触底距离指的是触发上拉触底事件时，滚动条距离页面底部的距离。
+可以在全局或页面的 .json 配置文件中，通过 onReachBottomDistance 属性来配置上拉触底的距离。小程序默认的触底距离是 50px，在实际开发中，可以根据自己的需求修改这个默认值。</p> <p>节流处理：</p> <p>① 在 data 中定义 isloading 节流阀
+false 表示当前没有进行任何数据请求
+true 表示当前正在进行数据请求
+② 在 getColors() 方法中修改 isloading 节流阀的值
+在刚调用 getColors 时将节流阀设置 true
+在网络请求的 complete 回调函数中，将节流阀重置为 false
+③ 在 onReachBottom 中判断节流阀的值，从而对数据请求进行节流控制
+如果节流阀的值为 true，则阻止当前请求
+如果节流阀的值为 false，则发起数据请求</p> <h3 id="_3-3-生命周期"><a href="#_3-3-生命周期" class="header-anchor">#</a> 3.3 生命周期</h3> <p>生命周期（Life Cycle）是指一个对象从创建 -&gt; 运行 -&gt; 销毁的整个阶段，强调的是一个时间段。例如：
+张三出生，表示这个人生命周期的开始
+张三离世，表示这个人生命周期的结束
+中间张三的一生，就是张三的生命周期
+我们可以把每个小程序运行的过程，也概括为生命周期：
+小程序的启动，表示生命周期的开始
+小程序的关闭，表示生命周期的结束
+中间小程序运行的过程，就是小程序的生命周期</p> <h4 id="_3-3-1-生命周期的分类"><a href="#_3-3-1-生命周期的分类" class="header-anchor">#</a> 3.3.1 生命周期的分类</h4> <p>在小程序中，生命周期分为两类，分别是：
+① 应用生命周期
+特指小程序从启动 -&gt; 运行 -&gt; 销毁的过程
+② 页面生命周期
+特指小程序中，每个页面的加载 -&gt; 渲染 -&gt; 销毁的过程</p> <h4 id="_3-3-2-什么是生命周期函数"><a href="#_3-3-2-什么是生命周期函数" class="header-anchor">#</a> 3.3.2 什么是生命周期函数</h4> <p>生命周期函数：是由小程序框架提供的内置函数，会伴随着生命周期，自动按次序执行。
+生命周期函数的作用：允许程序员在特定的时间点，执行某些特定的操作。例如，页面刚加载的时候，可以在onLoad 生命周期函数中初始化页面的数据。
+注意：生命周期强调的是时间段，生命周期函数强调的是时间点。</p> <h4 id="_3-3-3-生命周期函数的分类"><a href="#_3-3-3-生命周期函数的分类" class="header-anchor">#</a> 3.3.3 生命周期函数的分类</h4> <p>小程序中的生命周期函数分为两类，分别是：
+① 应用的生命周期函数
+特指小程序从启动 -&gt; 运行 -&gt; 销毁期间依次调用的那些函数
+② 页面的生命周期函数
+特指小程序中，每个页面从加载 -&gt; 渲染 -&gt; 销毁期间依次调用的那些函数</p> <h3 id="_3-4-wxs脚本"><a href="#_3-4-wxs脚本" class="header-anchor">#</a> 3.4 wxs脚本</h3> <p>WXS（WeiXin Script）是小程序独有的一套脚本语言，结合 WXML，可以构建出页面的结构</p> <p>wxml 中无法调用在页面的 .js 中定义的函数，但是，wxml 中可以调用 wxs 中定义的函数。因此，小程序中wxs 的典型应用场景就是“过滤器”。</p> <h4 id="_3-4-3-wxs-和-javascript-的关系"><a href="#_3-4-3-wxs-和-javascript-的关系" class="header-anchor">#</a> 3.4.3 wxs 和 JavaScript 的关系</h4> <p>① wxs 有自己的数据类型
+number 数值类型、string 字符串类型、boolean 布尔类型、object 对象类型、
+function 函数类型、array 数组类型、 date 日期类型、 regexp 正则
+② wxs 不支持类似于 ES6 及以上的语法形式
+不支持：let、const、解构赋值、展开运算符、箭头函数、对象属性简写、etc...
+支持：var 定义变量、普通 function 函数等类似于 ES5 的语法
+③ wxs 遵循 CommonJS 规范
+module 对象
+require() 函数
+module.exports 对象</p> <h4 id="_3-4-2-基础语法"><a href="#_3-4-2-基础语法" class="header-anchor">#</a> 3.4.2 基础语法</h4> <p>① 内嵌</p> <p>wxs 代码可以编写在 wxml 文件中的  标签内，就像 Javascript 代码可以编写在 html 文件中的</p> <p><code>&lt;script&gt;</code>标签内一样。wxml 文件中的每个 <code>&lt;wxs&gt;&lt;/wxs&gt;</code>标签，必须提供 module 属性，用来指定当前 wxs 的模块名称，方便在wxml 中访问模块中的成员.模块内要module.export函数方法</p> <p>② 外联</p> <p>wxs 代码还可以编写在以 .wxs 为后缀名的文件内，就像 javascript 代码可以编写在以 .js 为后缀名的文件中一样。模块内要module.export函数方法</p> <p>引入外联wxs脚本需要添加module和src属性</p> <p><code>&lt;wxs src=&quot;../../utils/tools.wxs&quot; module=&quot;m2&quot;&gt;&lt;/wxs&gt;</code></p> <h4 id="_3-4-3-wxs的特点"><a href="#_3-4-3-wxs的特点" class="header-anchor">#</a> 3.4.3 wxs的特点</h4> <p>① 与 JavaScript 不同
+为了降低 wxs（WeiXin Script）的学习成本， wxs 语言在设计时借大量鉴了 JavaScript 的语法。但是本质上，wxs 和 JavaScript 是完全不同的两种语言！</p> <p>② 不能作为组件的事件回调
+wxs 典型的应用场景就是“过滤器”，经常配合 Mustache 语法进行使用，如：tolower</p> <p>但是，在 wxs 中定义的函数不能作为组件的事件回调函数。比如button事件</p> <p>③ 隔离性</p> <p>隔离性指的是 wxs 的运行环境和其他 JavaScript 代码是隔离的。体现在如下两方面：
+wxs 不能调用 js 中定义的函数、 wxs 不能调用小程序提供的 API</p> <p>④ 性能好</p> <p>在 iOS 设备上，小程序内的 WXS 会比 JavaScript 代码快 2 ~ 20 倍、在 android 设备上，二者的运行效率无差</p> <h2 id="_4-基础加强"><a href="#_4-基础加强" class="header-anchor">#</a> 4. 基础加强</h2> <h3 id="_4-1-组件"><a href="#_4-1-组件" class="header-anchor">#</a> 4.1 组件</h3> <h4 id="_4-1-1-组件的创建与引用"><a href="#_4-1-1-组件的创建与引用" class="header-anchor">#</a> 4.1.1 组件的创建与引用</h4> <p>根目录下创建component文件夹，右击文件夹新建component组件</p> <p>① 局部引用</p> <p>然后在page中选择要引用的 父组件，在父组件json文件中注册子组件：usingComponents：{}</p> <p>在父组件的wxml文件中使用组件<code>&lt;son&gt;&lt;/son&gt;</code></p> <p>② 全局引用</p> <p>在app.json中&quot;usingComponents&quot;:{&quot;son&quot;:/components/son}</p> <h4 id="_4-1-2-组件和页面的区别"><a href="#_4-1-2-组件和页面的区别" class="header-anchor">#</a> 4.1.2 组件和页面的区别</h4> <p>从表面来看，组件和页面都是由 .js、.json、.wxml 和 .wxss 这四个文件组成的。但是，组件和页面的 .js 与
+.json 文件有明显的不同：
+组件的 .json 文件中需要声明 &quot;component&quot;: true 属性
+组件的 .js 文件中调用的是 Component() 函数------page()函数
+组件的事件处理函数需要定义到 methods 节点中----data平级</p> <h4 id="_4-1-3-组件样式"><a href="#_4-1-3-组件样式" class="header-anchor">#</a> 4.1.3 组件样式</h4> <p>① 默认情况下，自定义组件的样式只对当前组件生效，不会影响到组件之外的
+UI 结构，如图所示：
+组件 A 的样式不会影响组件 C 的样式
+组件 A 的样式不会影响小程序页面的样式
+小程序页面的样式不会影响组件 A 和 C 的样式
+好处： 防止外界的样式影响组件内部的样式、防止组件的样式破坏外界的样式</p> <p>② 注意：app.wxss 中的全局样式对组件无效
+只有 class 选择器会有样式隔离效果，id 选择器、属性选择器、标签选择器不受样式隔离的影响
+建议：在组件和引用组件的页面中建议使用 class 选择器，不要使用 id、属性、标签选择器！</p> <p>③ 修改组件的样式隔离选项
+默认情况下，自定义组件的样式隔离特性能够防止组件内外样式互相干扰的问题。但有时，我们希望在外界能够控制组件内部的样式，此时，可以通过 styleIsolation 修改组件的样式隔离选项。</p> <p>在js的components中options:{ styleIsolation:&quot;isolated&quot;}</p> <p>或者在json中 { &quot;styleIsolation&quot;: &quot;isolated&quot; }</p> <p>styleIsolation可选值：</p> <p><img src="https://gitee.com/ur-not/picture_wx/raw/master/styleIsolation.png" alt=""></p> <h4 id="_4-1-4-数据、方法、属性"><a href="#_4-1-4-数据、方法、属性" class="header-anchor">#</a> 4.1.4 数据、方法、属性</h4> <p>① 数据 ：在小程序组件中，用于组件模板渲染的私有数据，需要定义到 data 节点中，</p> <p>② 方法：在小程序组件中，事件处理函数和自定义方法需要定义到 methods 节点中</p> <p>自定义方法建议以下划线开头，与事件处理函数区分</p> <p>③ 属性：在小程序组件中，properties 是组件的对外属性，用来接收外界传递到组件中的数据，</p> <p>. data 和 properties 的区别
+在小程序的组件中，properties 属性和 data 数据的用法相同，它们都是可读可写的，只不过：
+data 更倾向于存储组件的私有数据
+properties 更倾向于存储外界传递到组件中的数据</p> <p>由于 data 数据和 properties 属性在本质上没有任何区别，因此 properties 属性的值也可以用于页面渲染，或使用 setData 为 properties 中的属性重新赋值</p> <h4 id="_4-1-5-数据监听器"><a href="#_4-1-5-数据监听器" class="header-anchor">#</a> 4.1.5 数据监听器</h4> <p>数据监听器用于监听和响应任何属性和数据字段的变化，从而执行特定的操作。它的作用类似于 vue 中的watch 侦听器。在小程序组件中，数据监听器的基本语法格式如下：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>observers：<span class="token punctuation">{</span>
+    <span class="token string">'字段A'</span><span class="token punctuation">,</span><span class="token string-property property">'字段B'</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">字段<span class="token constant">A</span>新值，字段<span class="token constant">B</span>新值</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">do</span> something
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="_4-1-6-纯数据字段"><a href="#_4-1-6-纯数据字段" class="header-anchor">#</a> 4.1.6 纯数据字段</h4> <p>纯数据字段指的是那些不用于界面渲染的 data 字段。
+应用场景：例如有些情况下，某些 data 中的字段既不会展示在界面上，也不会传递给其他组件，仅仅在当前组件内部使用。带有这种特性的 data 字段适合被设置为纯数据字段。
+好处：纯数据字段有助于提升页面更新的性能。</p> <p>① 定义纯数据字段</p> <p>在 Component 构造器的 options 节点中，指定 pureDataPattern 为一个正则表达式，字段名符合这个正则表达式的字段将成为纯数据字段</p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code>Component({
+options:{
+	//	指定以_开头的数据作为纯数据字段
+	pureDataPattern:/^_/
+	}
+}),
+data:{
+	a:true,
+	_b:true
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h4 id="_4-1-7-组件的生命周期"><a href="#_4-1-7-组件的生命周期" class="header-anchor">#</a> 4.1.7 组件的生命周期</h4> <p>在小程序组件中，最重要的生命周期函数有 3 个，分别是 created、attached、detached。它们各自的特点如下：
+① 组件实例刚被创建好的时候，created 生命周期函数会被触发
+此时还不能调用 setData
+通常在这个生命周期函数中，只应该用于给组件的 this 添加一些自定义的属性字段
+② 在组件完全初始化完毕、进入页面节点树后， attached 生命周期函数会被触发
+此时， this.data 已被初始化完毕
+这个生命周期很有用，绝大多数初始化的工作可以在这个时机进行（例如发请求获取初始数据）
+③ 在组件离开页面节点树后， detached 生命周期函数会被触发
+退出一个页面时，会触发页面内每个自定义组件的 detached 生命周期函数
+此时适合做一些清理性质的工作</p> <p><strong>定义生命周期函数</strong></p> <p>在小程序组件中，生命周期函数可以直接定义在 Component 构造器的第一级参数中，可以在 lifetimes 字段内进行声明（这是推荐的方式，其优先级最高）。</p> <h4 id="_4-1-8-组件所在页面的生命周期"><a href="#_4-1-8-组件所在页面的生命周期" class="header-anchor">#</a> 4.1.8 组件所在页面的生命周期</h4> <p>有时，自定义组件的行为依赖于页面状态的变化，此时就需要用到组件所在页面的生命周期。
+例如：每当触发页面的 show 生命周期函数的时候，希望能够重新生成一个随机的 RGB 颜色值。
+在自定义组件中，组件所在页面的生命周期函数有如下 3 个，分别是：show、hide、resize</p> <p>组件所在页面的生命周期函数，需要定义在 pageLifetimes 节点中</p> <p>pageLifetimes: { show:function(){ }  }</p> <h4 id="_4-1-9-插槽"><a href="#_4-1-9-插槽" class="header-anchor">#</a> 4.1.9 插槽</h4> <p>在自定义组件的 wxml 结构中，可以提供一个节点（插槽）,用于承载组件使用者提供的 wxml 结构</p> <p>在子组件中的html中添加一个插槽标签<code>&lt;slot&gt;&lt;/slot&gt;</code></p> <p>在父组件中的子组件引入位置：<code>&lt;son&gt;定义子组件插槽的内容&lt;/son&gt;</code></p> <p>① 单个插槽</p> <p>在小程序中，默认每个自定义组件中只允许使用一个slot进行占位，这种个数上的限制叫做单个插槽</p> <p>② 多个插槽</p> <p>在小程序的自定义组件中，需要使用多个插槽时，可以在子组件的 .js 文件中配置</p> <p>options:{ multilpleSlots:true }</p> <p>​	可以在子组件的 .wxml 中使用多个slot标签，以不同的 name 来区分不同的插槽。</p> <p>​	在父组件的定义内容时指定插槽名称：<code>&lt;son&gt;&lt;view slot=&quot;name&quot;&gt;内容&lt;/view&gt;&lt;/son&gt;</code></p> <h4 id="_4-1-10-父子组件之间的通信"><a href="#_4-1-10-父子组件之间的通信" class="header-anchor">#</a> 4.1.10 父子组件之间的通信</h4> <p>父子组件之间通信的 3 种方式
+<strong>（1） 属性绑定</strong>
+用于父组件向子组件的指定属性设置数据，仅能设置 JSON 兼容的数据</p> <p>​	父向子传值，而且只能传递普通类型的数据，无法将方法传递给子组件</p> <p>父组件的data，在父组件的子组件标签中定义，<code>&lt;son a=&gt;&lt;/son&gt;</code></p> <p>在子组件的properties中接收数据并声明数据类型：properties{ a:Number }</p> <p><strong>（2） 事件绑定</strong>
+用于子组件向父组件传递数据，可以传递任意数据</p> <p>① 在父组件的 js 中，定义一个函数，这个函数即将通过自定义事件的形式，传递给子组件
+② 在父组件的 wxml 中，通过bind:事件名的形式，将步骤 1 中定义的函数引用，传递给子组件</p> <p><code>&lt;son bind:sync=&quot;函数名&quot;&gt;&lt;/son&gt;</code></p> <p>③ 在子组件的 js 中，在button事件函数中，通过调用 this.triggerEvent('自定义事件名称', { /* 参数对象 */ }) ，将数据发送到父组件</p> <p>this.triggerEvent('sync',{value:   })</p> <p>④ 在父组件的 js 中，通过 e.detail 获取到子组件传递过来的数据</p> <p>在函数中，this.setData{num：e.detail.value}</p> <p>函数在父组件中定义，但在子组件中调用，调用时传参，即把数据传给了父组件</p> <p><strong>（3） 获取组件实例</strong>
+父组件还可以通过 this.selectComponent() 获取子组件实例对象
+这样就可以直接访问子组件的任意数据和方法，调用时需要传入一个选择器，例如 this.selectComponent(&quot;.my-component&quot;)</p> <p>先在父组件的子组件标签中，添加class或者id选择</p> <p>给父组件的button定义事件函数，在事件处理函数中 const son = this.selectComponent(&quot;类名&quot;)</p> <p>son.setData({}), son.子组件中的方法名()</p> <h4 id="_4-1-11-behaviors"><a href="#_4-1-11-behaviors" class="header-anchor">#</a> 4.1.11 behaviors</h4> <p>behaviors 是小程序中，用于实现组件间代码共享的特性，类似于 Vue.js 中的 “mixins”</p> <p>每个 behavior 可以包含一组属性、数据、生命周期函数和方法。组件引用它时，它的属性、数据和方法会被合并到组件中。module.exports = behaviors名({})
+每个组件可以引用多个 behavior，behavior 也可以引用其它 behavior</p> <p>在组件中，使用 require() 方法导入需要的 behavior，挂载后即可访问 behavior 中的数据或方法</p> <p>behavior 中所有可用的节点</p> <h3 id="_4-2-使用-npm-包"><a href="#_4-2-使用-npm-包" class="header-anchor">#</a> 4.2 使用 npm 包</h3> <p>小程序对 npm 的支持与限制</p> <p>目前，小程序中已经支持使用 npm 安装第三方包，从而来提高小程序的开发效率。但是，在小程序中使用npm 包有如下 3 个限制：
+① 不支持依赖于 Node.js 内置库的包
+② 不支持依赖于浏览器内置对象的包
+③ 不支持依赖于 C++ 插件的包</p> <h4 id="_4-2-1-vant-weapp"><a href="#_4-2-1-vant-weapp" class="header-anchor">#</a> 4.2.1 Vant Weapp</h4> <p>Vant Weapp 是有赞前端团队开源的一套小程序 UI 组件库，助力开发者快速搭建小程序应用。它所使用的是
+MIT 开源许可协议，对商业使用比较友好。
+官方文档地址 https://youzan.github.io/vant-weapp</p> <p>（1）安装Vant组件</p> <p>在小程序项目中，安装 Vant 组件库主要分为如下 3 步：
+① 通过 npm 安装（建议指定版本为@1.3.3）
+② 构建 npm 包
+③ 修改 app.json</p> <p>（2）使用 Vant 组件
+安装完 Vant 组件库之后，可以在 app.json 的 usingComponents 节点中引入需要的组件，即可在 wxml 中直接使用组件。示例代码如下</p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code>  &quot;usingComponents&quot;: {
+    &quot;van-button&quot;: &quot;@vant/weapp/button/index&quot;
+  },
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>van-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>默认按钮<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>van-button</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>（3）定制全局主题样式
+在 app.wxss 中，写入 CSS 变量，即可对全局生效：</p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code>page{
+  --button-danger-background-color: #f2f3f5;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="_4-2-2-api-promise化"><a href="#_4-2-2-api-promise化" class="header-anchor">#</a> 4.2.2 API Promise化</h4> <p>API Promise化，指的是通过额外的配置，将官方提供的、基于回调函数的异步 API，升级改造为基于Promise 的异步 API，从而提高代码的可读性、维护性，避免回调地狱的问题</p> <p>（1）安装 miniprogram-api-promise</p> <p>在小程序中，实现 API Promise 化主要依赖于 miniprogram-api-promise 这个第三方的 npm 包。它的安装和使用步骤如下</p> <p>npm i miniprogram-api-promise</p> <p>（删除文件夹中的 miniprogram-npm文件夹）</p> <p>打开工具--构建npm</p> <p>（2）实现 API Promise 化</p> <p>在app.js文件最顶端</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>promisifyAll<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'miniprogram-api-promise'</span>
+<span class="token keyword">const</span> wxp <span class="token operator">=</span> wx<span class="token punctuation">.</span>p <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token function">promisifyAll</span><span class="token punctuation">(</span>wx<span class="token punctuation">,</span>wxp<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>（3）调用 Promise 化之后的异步 API</p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code>    getInfo(){
+        wx.p.request({
+          url: '',
+          method:'GET'
+        })
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="_4-3-全局数据共享"><a href="#_4-3-全局数据共享" class="header-anchor">#</a> 4.3 全局数据共享</h3> <p>在小程序中，可使用 mobx-miniprogram 配合 mobx-miniprogram-bindings 实现全局数据共享。其中：
+mobx-miniprogram 用来创建 Store 实例对象
+mobx-miniprogram-bindings 用来把 Store 中的共享数据或方法，绑定到组件或页面中使用</p> <h4 id="_4-3-1-mobx"><a href="#_4-3-1-mobx" class="header-anchor">#</a> 4.3.1 MobX</h4> <p>（1）安装 MobX 相关的包</p> <p>npm i mobx-miniprograms mobx-miniprogram-bindings --save 然后构建npm</p> <p>（2）创建 MobX 的 Store 实例</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>observable<span class="token punctuation">,</span>action<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'mobx-miniprogram'</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> store <span class="token operator">=</span><span class="token function">observable</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">num</span><span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token keyword">get</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>num<span class="token operator">+</span><span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">updateNum</span><span class="token operator">:</span><span class="token function">action</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">step</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>num <span class="token operator">+=</span> step
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>（3）将 Store 中的成员绑定到页面中，在该页面的js文件中</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createStoreBindings <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'mobx-miniprogram-bindings'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>store<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../../store/store'</span>
+<span class="token function">Page</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token function-variable function">onLoad</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>storeBings<span class="token operator">=</span><span class="token function">createStoreBindings</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+            store<span class="token punctuation">,</span>
+            <span class="token literal-property property">fileds</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'num'</span><span class="token punctuation">,</span><span class="token string">'sum'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">actions</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'updateNum'</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">onUnLoad</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         <span class="token keyword">this</span><span class="token punctuation">.</span>storeBings<span class="token punctuation">.</span><span class="token function">destoryStoreBindings</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>（4）在页面上使用 Store 中的成员</p> <p><code>&lt;van-button data-setp='1' bindtap='add'&gt;&lt;/van-button&gt;</code></p> <p>add(){ this.updateNum(e.target.dataset.step)}</p> <p>（5）将 Store 中的成员绑定到组件中</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createStoreBindings <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'mobx-miniprogram-bindings'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>store<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../../store/store'</span>
+<span class="token function">Componet</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">behaviors</span><span class="token operator">:</span><span class="token punctuation">[</span>storeBindingsBehavior<span class="token punctuation">]</span><span class="token punctuation">,</span>
+ 	storeBings<span class="token punctuation">{</span>
+    	store<span class="token punctuation">,</span>
+    	<span class="token literal-property property">fileds</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token function-variable function">num1</span><span class="token operator">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span>store<span class="token punctuation">.</span>num<span class="token punctuation">,</span><span class="token function-variable function">sum1</span><span class="token operator">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span>store<span class="token punctuation">.</span>sum<span class="token punctuation">,</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">actions</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token literal-property property">updateNum</span><span class="token operator">:</span><span class="token string">'updateNum'</span><span class="token punctuation">}</span>
+       <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>（6）在组件中使用 Store 中的成员</p> <p>​		  同（4）</p> <h3 id="_4-4-分包"><a href="#_4-4-分包" class="header-anchor">#</a> 4.4 分包</h3> <p>分包指的是把一个完整的小程序项目，按照需求划分为不同的子包，在构建时打包成不同的分包，用户在使用时按需进行加载。</p> <h4 id="_4-4-1-分包的好处"><a href="#_4-4-1-分包的好处" class="header-anchor">#</a> 4.4.1 分包的好处</h4> <p>对小程序进行分包的好处主要有以下两点：
+可以优化小程序首次启动的下载时间
+在多团队共同开发时可以更好的解耦协作</p> <p>分包前，小程序项目中所有的页面和资源都被打包到了一起，导致整个项目体积过大，影响小程序首次启动的下载时间。</p> <p>分包后，小程序项目由 1 个主包 + 多个分包组成：
+主包：一般只包含项目的启动页面或 TabBar 页面、以及所有分包都需要用到的一些公共资源
+分包：只包含和当前分包有关的页面和私有资源</p> <h4 id="_4-4-2-分包的加载规则"><a href="#_4-4-2-分包的加载规则" class="header-anchor">#</a> 4.4.2 分包的加载规则</h4> <p>① 在小程序启动时，默认会下载主包并启动主包内页面
+tabBar 页面需要放到主包中
+② 当用户进入分包内某个页面时，客户端会把对应分包下载下来，下载完成后再进行展示
+非 tabBar 页面可以按照功能的不同，划分为不同的分包之后，进行按需下载</p> <h4 id="_4-4-3-分包的体积限制"><a href="#_4-4-3-分包的体积限制" class="header-anchor">#</a> 4.4.3 分包的体积限制</h4> <p>目前，小程序分包的大小有以下两个限制：
+整个小程序所有分包大小不超过 16M（主包 + 所有分包）
+单个分包/主包大小不能超过 2M</p> <h4 id="_4-4-4-打包原则"><a href="#_4-4-4-打包原则" class="header-anchor">#</a> 4.4.4 打包原则</h4> <p>① 小程序会按 subpackages 的配置进行分包，subpackages 之外的目录将被打包到主包中
+② 主包也可以有自己的 pages（即最外层的 pages 字段）
+③ tabBar 页面必须在主包内
+④ 分包之间不能互相嵌套</p> <h4 id="_4-4-5-引用原则"><a href="#_4-4-5-引用原则" class="header-anchor">#</a> 4.4.5 引用原则</h4> <p>① 主包无法引用分包内的私有资源
+② 分包之间不能相互引用私有资源
+③ 分包可以引用主包内的公共资源</p> <h4 id="_4-4-6-独立分包"><a href="#_4-4-6-独立分包" class="header-anchor">#</a> 4.4.6 独立分包</h4> <p>独立分包本质上也是分包，只不过它比较特殊，可以独立于主包和其他分包而单独运行。</p> <p>普通分包必须依赖于主包才能运行
+独立分包可以在不下载主包的情况下，独立运行</p> <p>开发者可以按需，将某些具有一定功能独立性的页面配置到独立分包中。原因如下：
+当小程序从普通的分包页面启动时，需要首先下载主包
+而独立分包不依赖主包即可运行，可以很大程度上提升分包页面的启动速度
+注意：一个小程序中可以有多个独立分包。</p> <p>独立分包和普通分包以及主包之间，是相互隔绝的，不能相互引用彼此的资源！例如：
+① 主包无法引用独立分包内的私有资源
+② 独立分包之间，不能相互引用私有资源
+③ 独立分包和普通分包之间，不能相互引用私有资源
+④ 特别注意：独立分包中不能引用主包内的公共资源</p> <h4 id="_4-4-7-分包预下载"><a href="#_4-4-7-分包预下载" class="header-anchor">#</a> 4.4.7 分包预下载</h4> <p>分包预下载指的是：在进入小程序的某个页面时，由框架自动预下载可能需要的分包，从而提升进入后续分包页面时的启动速度。</p> <p>预下载分包的行为，会在进入指定的页面时触发。在 app.json 中，使用 preloadRule 节点定义分包的预下载规则。</p> <p>同一个分包中的页面享有共同的预下载大小限额 2M</p></div></div> <!----> <div class="page-edit"><!----> <!----> <!----></div> <div class="page-nav-wapper"><!----> <!----></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/Ajax.html"><div>
+            jQuery中的Ajax
+            <!----></div></a> <span class="date"></span></dt></dl><dl><dd>02</dd> <dt><a href="/express.html"><div>
+            Express
+            <!----></div></a> <span class="date"></span></dt></dl><dl><dd>03</dd> <dt><a href="/about.html"><div>
+            
+            <!----></div></a> <span class="date"></span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="mailto:1421925110@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://music.163.com/#/song?id=544247584" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2022-2022
+    <span>Urnot</span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><div></div></div></div>
+    <script src="/assets/js/app.50cd9723.js" defer></script><script src="/assets/js/2.9b737b66.js" defer></script><script src="/assets/js/17.0753f765.js" defer></script>
+  </body>
+</html>
